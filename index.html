@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Google</title>
+</head>
+<style>
+        body{
+        margin:0;
+        font-family: arial, sans-serif;
+    }
+    .top-nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 13px;
+        
+    }
+    .top-nav a{
+        margin-right: 20px;
+    }
+    .a{
+        text-decoration: none;
+        color: black;
+    }
+    .a:hover{
+        text-decoration: underline;
+    }
+    .profile-pic{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;;
+    }
+    #middle{
+        margin-top: 200px;
+        text-align: center;
+    }
+    #searchbar-container{
+        margin-top: 20px;
+    }
+    #searchbar{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        outline:0;
+        width: 500px;
+        border-radius: 10px;
+        border:1px solid #eeeeee;
+    }
+    #button{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .buttons{
+        margin-right: 20px;
+        margin-top:20px;
+        padding:10px 5px;
+        border: 1px solid rgb(255,255,255);
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+    .buttons:hover{
+        border: 1px solid #3c4043;
+    }
+</style>
+<body>
+
+    <div class="top-nav">
+       
+            
+        <a href="#" class="a">Gmail</a>
+                
+        <a href="#" class="a"> Images</a>
+                
+         <a href="#"><img src="/images/outline_apps_black_24dp.png"></a>
+                
+        <a href="#" ><img class="profile-pic" src="https://lh3.googleusercontent.com/ogw/ADea4I7gQ0rGY9ra_2ptVJoW8XUCXBCqdO8NQIzVd5jh=s83-c-mo"></a>
+
+    </div>
+    <div id="middle"> 
+        <div id="logo">
+            <img src="/images/logo.png">
+    
+        </div>
+        <div id="searchbar-container">
+        <input id="searchbar" type="text">
+        </div>
+        <div id="button">
+            <div class="buttons">
+                <a href="">
+                    Google Search
+                </a>
+            </div>
+            <div class="buttons">
+                <a href="">
+                    I'm Feeling Lucky
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+    
+  
+</body>
+</html>
