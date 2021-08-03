@@ -8,6 +8,10 @@
     <title>Google</title>
 </head>
 <style>
+    a{
+        text-decoration: none;
+        color:black;
+    }
         body{
         margin:0;
         font-family: arial, sans-serif;
@@ -22,12 +26,10 @@
     }
     .top-nav a{
         margin-right: 20px;
+        
     }
-    .a{
-        text-decoration: none;
-        color: black;
-    }
-    .a:hover{
+
+    a:hover{
         text-decoration: underline;
     }
     .profile-pic{
@@ -39,8 +41,15 @@
         margin-top: 200px;
         text-align: center;
     }
+    .square:hover{
+        background: rgb(209, 207, 207);
+        border-radius: 50%;
+    }
     #searchbar-container{
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        max-height:100px ;
     }
     #searchbar{
         padding-top: 10px;
@@ -63,9 +72,41 @@
         background: #f8f9fa;
         border-radius: 4px;
     }
+    footer{
+        background-color: #F2F2F2;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+    }
     .buttons:hover{
         border: 1px solid #3c4043;
     }
+    .bottom{
+        font-size: 15px;
+        color:rgba(0, 0, 0, 0.54) !important;
+       
+        padding: 15px 10px;
+    }
+    .bottom-down-a{
+        color:rgba(0, 0, 0, 0.54)
+    }
+    .bottom-upper{
+        display: flex;
+        
+        align-items: center;
+        height: 50%;
+        padding: 15px 10px;
+        border-bottom: 1px solid rgb(218, 220, 224);
+        
+    }
+    .bottom-down{
+        display: flex;
+        justify-content: space-between;
+        
+        padding: 15px 10px;
+
+    }
+    
 </style>
 <body>
 
@@ -76,7 +117,7 @@
                 
         <a href="#" class="a"> Images</a>
                 
-         <a href="#"><img src="/images/outline_apps_black_24dp.png"></a>
+         <a href="#" class="square"><img src="/images/outline_apps_black_24dp.png"></a>
                 
         <a href="#" ><img class="profile-pic" src="https://lh3.googleusercontent.com/ogw/ADea4I7gQ0rGY9ra_2ptVJoW8XUCXBCqdO8NQIzVd5jh=s83-c-mo"></a>
 
@@ -87,7 +128,8 @@
     
         </div>
         <div id="searchbar-container">
-        <input id="searchbar" type="text">
+        <img src="https://image.flaticon.com/icons/png/512/709/709592.png">
+        <input id="searchbar" type="text" >
         </div>
         <div id="button">
             <div class="buttons">
@@ -104,7 +146,47 @@
         </div>
 
     </div>
+
     
   
 </body>
+<footer>
+    <div class="bottom">
+        <div class="bottom-upper">
+            Hungary
+            
+        </div>
+        <div class="bottom-down">
+            
+                <a class="bottom-down-a"href="#">
+                    About
+                </a>
+                <a class="bottom-down-a" href="#">
+                    Advertising
+                </a>
+                <a class="bottom-down-a" href="#">
+                    Business
+                </a>
+                <a class="bottom-down-a" href="#">
+                    How Search works
+                </a>
+           
+                <a class="bottom-down-a" href="#">
+                    Privacy
+                </a>
+                <a class="bottom-down-a" href="#">
+                    Terms
+                </a>
+                <a class="bottom-down-a" href="#">
+                    Settings
+                </a>
+
+            
+        </div>
+    
+        
+       
+
+    </div>
+</footer>
 </html>
