@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     
+
     <title>Google</title>
 </head>
 <style>
@@ -49,6 +50,7 @@
         margin-top: 20px;
         display: flex;
         justify-content: center;
+        align-items: center;
         max-height:100px ;
     }
     #searchbar{
@@ -106,10 +108,14 @@
         padding: 15px 10px;
 
     }
+    /*#magnifier{
+        height: 25px;
+        width: 25px;
+    }*/
     
 </style>
 <body>
-
+    
     <div class="top-nav">
        
             
@@ -128,7 +134,7 @@
     
         </div>
         <div id="searchbar-container">
-        <img src="https://image.flaticon.com/icons/png/512/709/709592.png">
+        <img id="magnifier"src="/images/search">
         <input id="searchbar" type="text" >
         </div>
         <div id="button">
