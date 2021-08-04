@@ -5,7 +5,9 @@
 <head>
     <meta charset="UTF-8">
     
-
+    <link rel = "icon" href = 
+    "https://www.google.com/favicon.ico" 
+            type = "image/x-icon">
     <title>Google</title>
 </head>
 <style>
@@ -13,9 +15,17 @@
         text-decoration: none;
         color:black;
     }
-        body{
+    html,    body{
         margin:0;
         font-family: arial, sans-serif;
+        height:100%;
+    }
+    #container{
+        min-height: 100%;
+    }
+    #main{
+        overflow:auto;
+        padding-bottom:100px ;
     }
     .top-nav{
         display: flex;
@@ -51,16 +61,36 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        max-height:100px ;
+        
+        height:40px ;
+        
+      
+    }
+    #tocenter{
+        border:1px solid #DDDDDD;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
     }
     #searchbar{
+        
         padding-top: 10px;
         padding-bottom: 10px;
         outline:0;
         width: 500px;
-        border-radius: 10px;
-        border:1px solid #eeeeee;
+        border:none;
+        border-radius: 25px;
     }
+        #magnifier{
+        height: 20px;
+        width: 20px;
+        padding-left:10px;
+        color: #9aa0a6;
+    }
+    
     #button{
         display: flex;
         justify-content: center;
@@ -71,14 +101,22 @@
         margin-top:20px;
         padding:10px 5px;
         border: 1px solid rgb(255,255,255);
-        background: #f8f9fa;
+        background:rgb(248, 249, 250);
         border-radius: 4px;
+        
+    }
+    .buttons>a{
+        text-decoration: none;
+        font-size: 13px;
     }
     footer{
         background-color: #F2F2F2;
-        position: fixed;
-        bottom: 0;
-        width: 100vw;
+       position: relative;
+        height: 100px;
+        
+        margin-top: -25px;
+        clear:both;
+
     }
     .buttons:hover{
         border: 1px solid #3c4043;
@@ -87,35 +125,42 @@
         font-size: 15px;
         color:rgba(0, 0, 0, 0.54) !important;
        
-        padding: 15px 10px;
+        padding: 5px 10px 0 10px;
     }
     .bottom-down-a{
-        color:rgba(0, 0, 0, 0.54)
+        color:rgba(0, 0, 0, 0.54);
+        padding:10px 0 10px 30px;
     }
     .bottom-upper{
         display: flex;
         
         align-items: center;
         height: 50%;
-        padding: 15px 10px;
+        padding: 15px 40px;
         border-bottom: 1px solid rgb(218, 220, 224);
         
     }
     .bottom-down{
         display: flex;
         justify-content: space-between;
-        
+        align-items: center;
+        border-bottom: 0px;
         padding: 15px 10px;
 
     }
-    /*#magnifier{
-        height: 25px;
-        width: 25px;
-    }*/
+    #bottom-left{
+        
+        justify-content: space-between;
+    }
+    #bottom-right{
+        
+        justify-content: space-between;
+    }
     
 </style>
 <body>
-    
+    <div id="container">
+        <div id="main">
     <div class="top-nav">
        
             
@@ -134,8 +179,11 @@
     
         </div>
         <div id="searchbar-container">
-        <img id="magnifier"src="/images/search">
-        <input id="searchbar" type="text" >
+            <div id="tocenter">
+                <img id="magnifier" src="/images/search.png">
+                <input id="searchbar" type="text" >
+            </div>
+        
         </div>
         <div id="button">
             <div class="buttons">
@@ -152,7 +200,7 @@
         </div>
 
     </div>
-
+</div>
     
   
 </body>
@@ -163,7 +211,7 @@
             
         </div>
         <div class="bottom-down">
-            
+            <div id="bottom-left">
                 <a class="bottom-down-a"href="#">
                     About
                 </a>
@@ -176,7 +224,8 @@
                 <a class="bottom-down-a" href="#">
                     How Search works
                 </a>
-           
+            </div>
+            <div id="bottom-right">
                 <a class="bottom-down-a" href="#">
                     Privacy
                 </a>
@@ -187,12 +236,16 @@
                     Settings
                 </a>
 
+            </div>
+
+           
+
             
         </div>
     
         
        
-
+    </div>
     </div>
 </footer>
 </html>
